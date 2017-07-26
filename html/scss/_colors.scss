@@ -1,0 +1,26 @@
+
+#header .navbar-brand, #header  .navbar-nav>li>a{
+  color:white;
+}
+
+#callUs{
+  border-color: rgba(255, 192, 0, 1);
+}
+
+#slider{
+  background-color: rgba(18, 18, 18, 1);
+  color:white;
+}
+.slide-header{
+  color: rgba(255, 192, 0, 1);
+}
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+  border-radius: 50%;
+  padding: 10px  12px;
+  font-size: 1rem;
+  border: 2px solid white;
+}
+#features{
+  background-color: #000;
+  color:white;
+}

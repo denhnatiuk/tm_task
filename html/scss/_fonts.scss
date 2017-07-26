@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=latin-ext');
+
+@font-face {
+    font-family: "Flow";
+    src: url("../fonts/Flow.eot");
+    src: url("../fonts/Flow.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Flow.woff") format("woff"),
+    url("../fonts/Flow.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body{
+  font-family: "Poppins";
+}
+#header .navbar-brand{
+  font-weight: 700;
+}
+#header .nav{
+  font-weight: 500;
+}
+.slide-tagline{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.slide-header{
+  font-family: "Flow";
+  font-size: 9rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.item p{
+  font-size: 1.55rem;
+}
+.section-header{
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5.525rem;
+}
+#about p{
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 2.125;
+}
+#features{
+  text-align: center;
+
+  & .feature-header{
+      font-size: 3.25rem;
+      font-weight: bold;
+      line-height: 1.25;
+  }
+
+  & p{
+    line-height: 1.75;
+  }
+}
+.section-tagline{
+  text-align: center;
+  font-size: 1.9rem;
+}
+.service-header{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.service p{
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
