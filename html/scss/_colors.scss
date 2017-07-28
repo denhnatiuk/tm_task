@@ -1,26 +1,79 @@
+// color schema
+$light: rgba(255,255,255,1);
+$backlight:rgba(255, 192, 0, 1);
+$dark: rgba(0,0,0,1);
+
+#header .navbar-inverse{
+  background-color: $dark;
+}
 
 #header .navbar-brand, #header  .navbar-nav>li>a{
-  color:white;
+  color:$light;
 }
 
 #callUs{
-  border-color: rgba(255, 192, 0, 1);
+  border-color: $backlight;
 }
 
 #slider{
-  background-color: rgba(18, 18, 18, 1);
-  color:white;
+  background-color: rgba(18,18,18,1);
+  color:$light;
 }
 .slide-header{
-  color: rgba(255, 192, 0, 1);
+  color: $backlight;
 }
 .glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
   border-radius: 50%;
   padding: 10px  12px;
   font-size: 1rem;
-  border: 2px solid white;
+  border: 2px solid $light;
 }
 #features{
-  background-color: #000;
-  color:white;
+  background-color: $dark;
+  color:$light;
+
+  & div:hover>.feature-header{
+    color: $backlight;
+  }
+}
+#services {
+  & p {
+    color: rgba(170,170,170,1);
+  }
+  & .service:hover{
+    & p{
+      color:$dark;
+    }
+    & .service-header{
+      line-height: 1.5;
+      text-decoration: underline;
+    }
+  }
+
+}
+#team{
+  background-color: $backlight;
+}
+.person{
+  background-color: $light;
+
+  & .job-title{
+    color: $backlight;
+  }
+}
+#feedback{
+  background-color: $dark;
+  color: $light;
+
+  & .section-header>span{
+    color: $backlight;
+  }
+
+  & .btn-warning{
+    background-color: $backlight;
+
+    &:hover{
+      color: $dark;
+    }
+  }
 }

@@ -13,37 +13,45 @@
 
 body{
   font-family: "Poppins";
+  font-size: 12px;
 }
-#header .navbar-brand{
-  font-weight: 700;
-}
-#header .nav{
-  font-weight: 500;
-}
-.slide-tagline{
-  font-size: 3rem;
+h3.section-header{
+  padding-top: 3rem;
+  text-align: center;
   font-weight: bold;
+  font-size: 3.525rem;
 }
-.slide-header{
-  font-family: "Flow";
-  font-size: 9rem;
-  line-height: 1;
-  text-transform: uppercase;
+
+
+#header{
+  & .navbar-brand{
+  font-weight: 700;
+  }
+  & .nav{
+  font-weight: 500;
+  }
 }
-.item p{
-  font-size: 1.55rem;
-}
+
 .section-header{
   padding-top: 3rem;
   text-align: center;
   font-weight: bold;
   font-size: 5.525rem;
 }
-#about p{
-  text-align: center;
-  font-size: 1.75rem;
-  line-height: 2.125;
+#about{
+  & .section-header{
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
+  }
+  & p{
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 2.125;
+  }
 }
+
 #features{
   text-align: center;
 
@@ -54,18 +62,137 @@ body{
   }
 
   & p{
+    font-size: 1.35rem;
     line-height: 1.75;
+  }
+}
+
+#services{
+  & .section-header{
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.525rem;
+  }
+  & .service-header{
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  & .service p{
+    font-size: 1.25rem;
+    line-height: 1.25;
   }
 }
 .section-tagline{
   text-align: center;
   font-size: 1.9rem;
 }
-.service-header{
-  font-size: 2.5rem;
-  font-weight: bold;
+.person{
+  text-align: center;
+
+  & .person-name{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & .job-title{
+    font-weight: bold;
+  }
 }
-.service p{
-  font-size: 1.25rem;
-  line-height: 1.25;
+#team{
+  & .section-header{
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+  & .section-tagline{
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
+#feedback{
+
+  & .section-header{
+    font-size: 5rem;
+  }
+}
+#footer{
+  & .bold{
+    font-weight: bold;
+  }
+}
+@media screen and (max-width:480px) {
+  #slider{
+    & .slide-tagline{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    & .slide-header{
+    font-family: "Flow";
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    }
+  }
+}
+//mobile-l
+@media screen and (min-width:480px) {
+  #slider{
+
+    & .slide-tagline{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    & .slide-header{
+      font-family: "Flow";
+      font-size: 9rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    & .item p{
+      font-size: 1.55rem;
+    }
+  }
+  .section-header{
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.525rem;
+  }
+}
+//tab-s
+@media screen and (min-width:640px) {
+  #slider{
+
+    & .slide-tagline{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    & .slide-header{
+      font-family: "Flow";
+      font-size: 11rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    & .item p{
+      font-size: 1.55rem;
+    }
+  }
+  .section-header{
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.525rem;
+  }
+}
+//tab-m
+@media screen and (min-width:768px) {}
+//tab-l
+@media screen and (min-width:1024px) {}
+//laptop
+@media screen and (min-width:1200px) {}
+//2k - wide
+@media screen and (min-width:1920px) {}
+//4k
+@media screen and (min-width:4096px) {}

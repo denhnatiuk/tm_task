@@ -7,12 +7,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "dist": "gulp --production"
+    "start": "gulp"
   },
   "keywords": [],
-  "author": "",
+  "author": "Den Hnatiuk <denys.hnatiuk@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenysHnatiuk/tm_task.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
