@@ -139,18 +139,22 @@ h3.section-header{
 //mobile-l
 @media screen and (min-width:480px) {
   #slider{
+    text-align: left;
 
     & .slide-tagline{
+      text-align: left;
       font-size: 3rem;
       font-weight: bold;
     }
     & .slide-header{
+      text-align: left;
       font-family: "Flow";
       font-size: 9rem;
       line-height: 1;
       text-transform: uppercase;
     }
     & .item p{
+      text-align: left;
       font-size: 1.55rem;
     }
   }

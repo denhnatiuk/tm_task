@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/main.css">
+
 
      <!--[if lt IE 9]>
        <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
@@ -288,6 +290,28 @@
       </div>
     </footer>
     <!--scripts-->
+    <script type="text/javascript">
+      (function(){
+        document.body.innerHTML += '<span id="testBs" class="lead" style="display:none"></span>';
+        var s = document.getElementById('testBs');
+        if ("300"!==s.style.fontWeight) {
+          function addStyle(href, sri, cors){
+            var style = document.createElement('link');
+            style.type = "text/css";
+            style.rel = "stylesheet";
+            style.href = href;
+            style.charset = "utf-8";
+            //style.media = "screen";
+            // style.title = "style";
+            (cors!==undefined)?style.setAttribute("crossorigin",cors):style.removeAttribute("crossorigin"); //Cross-Origin Resource Sharing (CORS) mechanism
+            (sri!==undefined)?style.integrity=sri : style.removeAttribute("integrity");     // Subresource Integrity (SRI)
+            document.getElementsByTagName( "head" )[0].appendChild( style );
+          }
+        }
+        addStyle("./lib/node_modules/bootstrap/dist/css/bootstrap.min.css");
+        s.remove();
+      })();
+    </script>
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write("<script src='.\/lib\/node_modules\/jquery\/dist\/jquery.min.js'><\/script>");</script>

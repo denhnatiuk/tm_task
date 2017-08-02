@@ -102,16 +102,21 @@ h3.section-header {
     text-transform: uppercase; } }
 
 @media screen and (min-width: 480px) {
-  #slider .slide-tagline {
-    font-size: 3rem;
-    font-weight: bold; }
-  #slider .slide-header {
-    font-family: "Flow";
-    font-size: 9rem;
-    line-height: 1;
-    text-transform: uppercase; }
-  #slider .item p {
-    font-size: 1.55rem; }
+  #slider {
+    text-align: left; }
+    #slider .slide-tagline {
+      text-align: left;
+      font-size: 3rem;
+      font-weight: bold; }
+    #slider .slide-header {
+      text-align: left;
+      font-family: "Flow";
+      font-size: 9rem;
+      line-height: 1;
+      text-transform: uppercase; }
+    #slider .item p {
+      text-align: left;
+      font-size: 1.55rem; }
   .section-header {
     padding-top: 3rem;
     text-align: center;
